@@ -1,0 +1,213 @@
+/*Task1: General Styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	font-family:Arial, Verdana ;
+	padding: 20;
+	background-color: #F5F5F5;
+   color: #333;
+   list-style: none;
+   padding: 10px;
+   text-align: center;
+    
+}
+
+
+/*Task2: Navigation menu*/
+nav ul{ 
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  list-style: none;
+  padding: 10px 0; 
+
+  
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: linear-gradient(to right, #2a9d8f, #3b9d8e);
+}
+nav ul li a:hover{
+    background-color: white;
+    transform: scale(1.1);
+
+}
+
+nav ul li a:active{
+   text-decoration: underline;
+   color: #ff9900;
+    transform: scale(0.95);
+}
+
+
+
+/*Task3: Tropography*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+	background-color: #264653;;
+    padding: 30px 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.head h1{
+    font-weight: bold;
+	color: #2a9d8f;
+    margin-bottom: 10px; 
+}
+h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+
+}
+h2 {
+    color: #2a9d8f;
+    font-size: 2rem;
+}
+
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #3b9d8e;
+    font:bold;
+}
+
+
+
+/*Task4: Images */
+header.logo img{
+    max-width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+img{
+    justify-content:space-between;
+	max-width: 100%;
+	height: 400px;
+    width: 400px;
+   margin-bottom: 20px;
+   box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2) ;
+}   
+img:hover{
+     padding: 5px 10px;
+        background-color: #003366;
+}
+iframe{
+    height: 400px;
+    width: 400px;
+}
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+
+@media(max-width:768px){
+    header.logo img{
+        width: 120px;
+    }
+}
+
+@media(max-width:480px){
+    header.logo.img{
+        width: 100px;
+    }
+}
+
+
+/*Task5: Buttons and links */
+button{
+	color: darkblue;
+    font-weight: bold;
+    border-radius: 0;
+	padding: 10px 20px;
+    cursor: pointer;
+
+}
+button:hover{
+	background-color: #f4a261;
+}
+a.external{
+	text-decoration: underline;
+    
+}
+
+.btn-primary{
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #2a9d8f; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 25px; 
+    text-align: center; 
+     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #264653; 
+    transform: scale(1.05);
+}
+/*Task6: Contact Form*/
+form{
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+	display: flex;
+    font:bold;
+    justify-content: center;
+   
+}
+
+form input, form button{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/*Task7: Footer*/
+
+footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2a9d8f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4a261;
+}
+
+
